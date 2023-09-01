@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live site URL](https://your-live-site-url.com)
+- Solution URL: [Github Repo](https://github.com/kxn69/age-calculator)
+- Live Site URL: [Live site](https://kxn69.github.io/age-calculator/)
 
 ## My process
 
