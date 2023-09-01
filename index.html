@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <!-- Date calculator App -->
+  <div id="date-calculator-app" class="date-calculator-app">
+    <div class="date-input">
+      <span class="input-container">
+        <h5 class="input-headers">Day</h5>
+        <input type="number" id="day" name="day" placeholder="DD">
+        <p class="err-text" hidden>Must be a valid day</p>
+      </span>
+
+      <span class="input-container">
+        <h5 class="input-headers">Month</h5>
+        <input type="number" id="month" name="month" placeholder="MM">
+        <p class="err-text" hidden>Must be a valid Month</p>
+      </span>
+
+      <span class="input-container">
+        <h5 class="input-headers">Year</h5>
+        <input type="number" id="year" name="year" placeholder="YYYY">
+        <p class="err-text" hidden>Must be in the past</p>
+      </span>
+    </div>
+    <!-- Button Line and Svg -->
+    <div class="button-line">
+      <hr>
+      <button class="svg-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+      </button>
+    </div>
+      <!-- Date Display -->
+      <div class="date-display">
+        <h1 class="display"><span class="years-display count">- -</span> years</h1>
+        <h1 class="display"><span class="months-display count">- -</span> months</h1>
+        <h1 class="display"><span class="days-display count">- -</span> days</h1>
+      </div>
+  </div>
+  <!-- Attribution -->
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/kxn69">KxN</a>.
+  </div>
+
+  <script src="./script/main.js"></script>
+</body>
+</html>

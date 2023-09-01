@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: hsl(0, 0%, 94%);
+    display: grid;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.date-calculator-app {
+    width: 50vw;
+    height: 70vh;
+    margin: auto;
+    padding: 50px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border-bottom-right-radius: 200px;
+}
+
+.date-input {
+    display: flex;
+}
+
+.input-headers {
+    margin: 5px;
+    text-transform: uppercase;
+    color: hsl(0, 1%, 44%);
+    font-weight: 800;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 160px;
+    max-height: 80px;
+}
+
+.input-container:nth-child(2) {
+    margin: auto 20px;
+}
+
+.input-container .err-text {
+    font-size: 10px;
+    margin: 5px 0;
+    font-weight: 400;
+}
+
+input {
+    width: 100%;
+    height: 30px;
+    padding: 10px 20px;
+    border: 1px solid hsl(0, 0%, 86%);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+input:focus {
+    outline: none;
+    border-color: hsl(259, 100%, 65%);
+}
+
+.error h5, .error p {
+    color: hsl(0, 100%, 67%);
+}
+
+.error input {
+    border-color: hsl(0, 100%, 67%);
+}
+
+.button-line {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    height: 80px;
+    justify-content: flex-end;
+}
+
+.button-line hr {
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 86%);
+    position: absolute;
+    z-index: 1;
+}
+
+.svg-btn {
+    background: hsl(259, 100%, 65%);
+    display: inline-block;
+    padding: 15px;
+    border: none;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+}
+
+.svg-btn:hover {
+    background: hsl(0, 0%, 8%);
+}
+
+.date-display {
+    display: grid;
+}
+
+.date-display .display {
+    margin: 0;
+    padding: 0;
+    font-size: 80px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.date-display .display .count {
+    color: hsl(259, 100%, 65%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 900px) {
+    .date-calculator-app {
+        width: 70vw;
+        height: 60vh;
+        max-width: 85vw;
+        padding: 80px 20px;
+    }
+
+    .date-input {
+        justify-content: space-between;
+    }
+
+    .button-line {
+        justify-content: center;
+    }
+
+    .button-line hr {
+        width: 100%;
+    }
+
+   .date-display .display {
+        font-size: 70px;       
+   }
+}
+
+@media (max-width: 500px) {
+    .date-calculator-app {
+        width: 85vw;
+        height: auto;
+   }
+
+    .date-display .display {
+        font-size: 55px;       
+    }
+
+    input {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 300px) {
+    .date-calculator-app {
+        width: 80vw;
+        height: auto;
+   }
+
+    .date-display .display {
+        font-size: 38px;       
+    }
+
+    input {
+        font-size: 16px;
+    }
+}
